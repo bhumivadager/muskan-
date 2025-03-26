@@ -1,0 +1,28 @@
+
+ <h1 style="font-size:30px;" > normalization entity relationship diagram (ERD)</h1>
+<p><font size="5">in<b>1 Introduction
+Entity relationship diagram (ERD) is one of the most widely used technique for data modeling. Data modeling is an essential component of database design and development. It provides a means to analyze business requirements so as to standardize organizational vocabulary, enforce business rules, and ensure adequate data quality. Since data has become a vital corporate resource (Adelman et al., 2005; Dyche, 2000; Liataud & Hammond, 2001), good data models can make a significant contribution to an organization’s future success.
+
+Data modeling is performed during the initial phases of the database development process (also referred as database life cycle) as shown in Figure 1(Mannino, 2006; Rob & Coronel, 2006). During this process, the top two phases are concerned with the information content of the database, while the last two phases are concerned with the implementation of the database on some commercial DBMS.
+
+.</p>
+<hr>
+<centre><img src= "https://tdan.com/wp-content/uploads/2007/01/i039ht0301.gif"height="600"><centre/>
+<P>about napre
+During the conceptual data modeling phase, data requirements are expressed through an ERD. The conceptual data modeling phase in general is independent of a DBMS. The logical design phase transforms the conceptual data model into a format understandable to DBMS. This phase may also enhance or refine the data model (ERD) of the previous phase to ensure efficient utilization of the database. Since most of the commercial DBMS are based on the relational model, the end product of this phase is relational model design.
+
+One of the ways an ERD is enhanced during the logical design phase is through the process of normalization. Normalization is one of the key tenets in relational model design. It is the process of removing redundancy in a table so that the table is easier to modify (Bala & Martin, 1997; Codd, 1970; Date, 2003; Mannino, 2006; Rob & Coronel, 2006). It usually involves dividing an entity table into two or more tables and defining relationships between the tables. The objective is to isolate data so that additions, deletions, and modifications of an attribute can be made in just one table and then propagated through the rest of the database via the defined relationships.
+
+Normalization utilizes association among attributes within an entity table to accomplish its objective. Since an ERD also utilizes association among attributes as a basis to identify entity type structure, it is possible to apply normalization principles during the conceptual data modeling phase. Performing normalization during ERD development can improve the conceptual model, and speed its implementation. This paper outlines the application of normalization principles to ERD development during the conceptual modeling phase. There are various standards for ERD. In this paper, the Crow’s Foot notation is utilized.</P>
+about napre
+2.0 Application of Normalization to ERD
+Data modeling is an iterative process. Generally a preliminary data model is constructed which is then refined many times. There are many guidelines (rules) for refining an ERD. Some of these rules are as follows (Mannino, 2006):
+
+Transform attributes into entity types. This transformation involves the addition of an entity type and a 1-M (one-to-many) relationship.
+Split compound attributes into smaller attributes. A compound attribute contains multiple kinds of data.
+Expand entity types into two entity types and a relationship. This transformation can be useful to record a finer level of detail about an entity.
+Transform a weak entity type into a strong entity type. This transformation is most useful for associative entity types.
+Add historical details to a data model. Historical details may be necessary for legal as well as strategic reporting requirements. This transformation can be applied to attributes and relationships.
+Add generalization hierarchies by transforming entity types into generalization hierarchy.
+Application of normalization principles toward ERD development enhances these guidelines. To understand this application (i) representation of dependency concepts in an ERD is outlined, followed by (ii) representation of normal forms toward the development of entity type structure. Guidelines for identification of various dependencies is avoided in the paper so as to focus more on their application. Only the first four normal forms and the Boyce-Codd normal forms are considered.
+
